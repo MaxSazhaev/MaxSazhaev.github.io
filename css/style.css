@@ -5,7 +5,7 @@
     color: white;
 }
 
-html
+body, html
 {
     height: 100%;
 }
@@ -24,6 +24,11 @@ line-height: 112px;
 ul
 {
     list-style: none;
+}
+
+h2
+{
+   padding-top: 20px;
 }
 
 ul li
@@ -67,11 +72,16 @@ header nav ul li a:hover
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.slider,.slider ul,.slider ul li
+.slider ul,.slider ul li
 {
-    height: 710px;
+    height: 779px;
     width: 100%;
-    color:white;
+    text-align: center;
+}
+.slider
+{
+    height: 100%;
+    width: 100%;
     text-align: center;
 }
 
@@ -87,7 +97,8 @@ header nav ul li a:hover
 
 .slider a
 {
-    padding: 10px;
+    padding: 10px 40px;
+    background-color: orange;
 }
 /*
 .img1
