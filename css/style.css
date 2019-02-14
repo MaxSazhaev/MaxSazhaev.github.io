@@ -3,16 +3,14 @@
     margin: 0;
     padding: 0;
     color: white;
+    box-sizing: border-box;
 }
 
-body, html
-{
-    height: 100%;
-}
+
 
 header
 {
-    background: #000000;  /* fallback for old browsers */
+background: #000000;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -41,8 +39,9 @@ header nav
     float: right;
 }
 
-.logo img
+.logo
 {
+    margin-top: 5px;
     margin-right: 50px;
     height: 100px;
     width: 100px;
@@ -88,6 +87,7 @@ header nav ul li a:hover
 .slider h2
 {
     font-weight: bold;
+    margin-top: 220px;
 }
 
 .slider span
@@ -99,11 +99,75 @@ header nav ul li a:hover
 {
     padding: 10px 40px;
     background-color: orange;
+    margin-right: 10px;
 }
-/*
+
+.slider a.btn-half:hover
+{
+    background-color: dodgerblue;
+}
+
 .img1
 {
-    background-image: url(..//images/background.jpg);
+    /*background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(..//images/background.jpg);*/
     background-size: 100% 100%;
 }
-*/
+
+.img2
+{
+    /*background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(..//images/background.jpg);*/
+    background-size: 100% 100%;
+}
+
+.img3
+{
+    /*background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(..//images/background.jpg);*/
+    background-size: 100% 100%;
+}
+
+.column
+{
+    padding-bottom: 5%;
+    width: 50%;
+    justify-items: space-evenly;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: auto;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  div.box
+  {
+    box-sizing: border-box;
+    width: 90%;
+    border: 5px solid white;
+    padding: 5% 5% 5% 5%;
+  }
+
+.projects
+{
+padding-left: 5%;
+}
+
+.projects h2
+{
+    text-align: center;
+}
+
+.projectgif
+{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
