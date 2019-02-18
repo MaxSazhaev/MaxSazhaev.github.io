@@ -3,21 +3,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>My Website</title>
+
     <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href = "css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
     <!-- JQuery library  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Javascript  -->
     <script src="js/caroufredsel.js" type="text/javascript"></script>
     <script src="js/jquery.scrollme.js" type="text/javascript"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
@@ -27,18 +31,18 @@
             <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
                     <img src="images/logo.png" class="logo">
                     <nav>
-                            <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">About Me</a></li>
-                                <li><a href="">Gaming Projects</a></li>
-                                <li><a href="">Android Projects</a></li>
-                                <li><a href="">Contact</a></li>
+                            <ul class = "nav navbar-nav">
+                                <li><a href="#Home">Home</a></li>
+                                <li><a href="#AboutMe">About Me</a></li>
+                                <li><a href="#GamingProjects">Gaming Projects</a></li>
+                                <li><a href="#AndroidProjects">Android Projects</a></li>
+                                <li><a href="#Contact">Contact</a></li>
                             </ul>
                         </nav>
                   </nav>
     </header>
    <!-- <div id="grad"> --> 
-    <section class="slider">
+    <section class="slider" id="Home">
         <ul class="slidr-carousel" id="slider-carousel">
             <li class="img1">
                 <h2>STUFF<span>STUFF</span></h2>
@@ -79,31 +83,10 @@
         </ul>
     </section>
     <span>
-        
 
-            <p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p><p>&darr;</p>
-    
-    
-        <div class="scrollme">
-            <h2>Scroll me!</h2>
-            <div 
-              class="animateme"
-              data-when="span"
-              data-from="0"
-              data-to="1"
-              data-easing="easeinout"
-              data-rotatey="360"
-            >
-            <h2>hi this isnt working and i really want it to work why</h2>
-            <img src="images/favicon-32x32.png">
-        </div>
-    </div>
-    
-
-
-    <section class = "projects">
+    <section class = "projects" id="GamingProjects">
             <div class="row">
-                    <div class="column">
+                    <div class="column" id="column-left">
                         <div class="box">
                                <a href="https://github.com/MaxSazhaev/ImpulseInstagib"> <img src="images/placeholder_shot.gif" class="projectgif"> </a>
                       <h2>Impulse Instagib (Current Project)</h2>
@@ -112,7 +95,7 @@
                 </div>
 
                 
-                    <div class="column">
+                    <div class="column" id="column-right">
                             <div class="box">
                                 <a href="https://github.com/MaxSazhaev/COMP-231-Project-Fun-Game"><img src="images/placeholder_shot.gif" class="projectgif"></a>
                       <h2>Rolling Ball Game</h2>
@@ -121,7 +104,7 @@
                 </div>
 
                     
-                    <div class="column">
+                    <div class="column" id="column-left">
                             <div class="box">
                                 <a href="https://github.com/MaxSazhaev/COMP396-Final-Project"><img src="images/placeholder_shot.gif" class="projectgif"></a>
                       <h2>Patient Zero</h2>
@@ -129,7 +112,7 @@
                     </div>
                   </div>
 
-                  <div class="column">
+                  <div class="column" id="column-right">
                         <div class="box">
                             <a href="https://github.com/MaxSazhaev/COMP396-Assignment2"><img src="images/placeholder_shot.gif" class="projectgif"></a>
                   <h2>Pathfinding Experiment</h2>
@@ -139,7 +122,23 @@
                 </div>
     </section>
 
-
     <script src="js/main.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar', {
+            duration: 2000,
+            origin: 'bottom'
+        })
+        sr.reveal('#column-left', {
+            duration: 2000,
+            origin: 'left',
+            distance: '300px'
+        })
+        sr.reveal('#column-right', {
+            duration: 2000,
+            origin: 'right',
+            distance: '300px'
+        })
+        </script>
 </body>
 </html>

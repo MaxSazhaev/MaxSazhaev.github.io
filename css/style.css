@@ -15,13 +15,14 @@ background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-2
 background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 /*background-color: darkslategray;*/
-height: 50px;
+height: 80px;
 line-height: 50px;
 }
 
 ul
 {
     list-style: none;
+    margin-bottom: 0px !important;
 }
 
 h2
@@ -37,6 +38,7 @@ ul li
 header nav
 {
     float: right;
+    padding-bottom: 0px;
 }
 
 .logo
@@ -49,11 +51,10 @@ header nav
 
 header nav ul li a
 {
-    padding-right: 30px;
+    padding-right: 20px;
     font-weight: bold;
     color: whitesmoke;
     transition: all 0.5s ease-in-out;
-    vertical-align: center;
 }
 
 header nav ul li a:hover
@@ -74,7 +75,7 @@ header nav ul li a:hover
 
 .slider ul,.slider ul li
 {
-    height: 779px;
+    height: 900px;
     width: 100%;
     text-align: center;
 }
@@ -171,19 +172,4 @@ padding-left: 5%;
     align-items: center;
     height: 100%;
     width: 100%;
-}
-
-.scrollme
-{
-    padding:2em;
-  border:1em solid #e8e8e8;
-  perspective:600px;
-}
-
-.animateme
-{
-  width:80%;
-  padding:10%;
-  background:#e8e8e8;
-  transform-origin:center center center;
 }
