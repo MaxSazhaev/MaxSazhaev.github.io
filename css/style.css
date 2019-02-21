@@ -170,6 +170,7 @@ background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, F
 .projects
 {
 padding-left: 5%;
+padding-top: 5%;
 }
 
 .projects h2
