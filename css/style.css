@@ -35,6 +35,7 @@ h2 a:hover
 {
     color: dodgerblue;
     text-decoration: none;
+    transition: all 0.5s ease-in-out;
 
 }
 
@@ -64,6 +65,7 @@ header nav ul li a
     color: whitesmoke;
     transition: all 0.5s ease-in-out;
 }
+
 
 header nav ul li a:hover
 {
@@ -173,10 +175,11 @@ padding-left: 5%;
 padding-top: 5%;
 }
 
-.projects h2
-{
+.projects h2 
+{   
     text-align: center;
     color: orange;
+    transition: all 0.5s ease-in-out;
 }
 
 .projectgif
