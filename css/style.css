@@ -20,10 +20,22 @@ ul
     margin-bottom: 0px !important;
 }
 
-h2
+h2 a
 {
    padding-top: 20px;
    color: orange;
+}
+
+h2 a:link, h2 a:visited, h2 a:active
+{
+    color: orange;
+}
+
+h2 a:hover
+{
+    color: dodgerblue;
+    text-decoration: none;
+
 }
 
 ul li
@@ -86,7 +98,8 @@ background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, F
 .slider h2
 {
     font-weight: bold;
-    margin-top: 220px;
+    margin-top: 450px;
+    color: orange;
 }
 
 .slider span
