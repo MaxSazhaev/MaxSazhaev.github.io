@@ -188,3 +188,23 @@ padding-top: 5%;
     height: 100%;
     width: 100%;
 }
+
+.about
+{
+padding-left: 5%;
+padding-top: 5%;
+}
+
+.about h2 
+{   
+    text-align: left;
+    color: orange;
+    transition: all 0.5s ease-in-out;
+}
+
+.aboutimg
+{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
