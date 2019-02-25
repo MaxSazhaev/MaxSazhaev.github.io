@@ -20,6 +20,28 @@ ul
     margin-bottom: 0px !important;
 }
 
+.about h1
+{
+    color: black;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.projects h1
+{
+    color: black;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
 h2 a
 {
    padding-top: 20px;
@@ -167,6 +189,11 @@ background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, F
     width: 90%;
     border: 5px solid white;
     padding: 5% 5% 5% 5%;
+  }
+
+  .AboutMeText
+  {
+      margin-right: 5%;
   }
 
 .projects
