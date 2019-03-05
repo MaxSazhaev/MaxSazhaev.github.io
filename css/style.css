@@ -17,7 +17,7 @@ line-height: 50px;
 ul
 {
     list-style: none;
-    margin-bottom: 0px !important;
+    margin: 0px !important;
 }
 
 .about h1
@@ -32,6 +32,17 @@ ul
 }
 
 .projects h1
+{
+    color: black;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.contact h1
 {
     color: black;
     font-weight: bold;
@@ -198,8 +209,8 @@ background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, F
 
 .projects
 {
-padding-left: 5%;
-padding-top: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
 }
 
 .projects h2 
@@ -247,4 +258,27 @@ padding-top: 5%;
     align-items: center;
     height: 100%;
     width: 100%;
+}
+
+.contact a
+{
+    padding-right: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.contact a:hover
+{
+    text-decoration: none;
+    color: grey;
+}
+
+.contact
+{
+    background-color: rgb(37, 37, 37);
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
 }
