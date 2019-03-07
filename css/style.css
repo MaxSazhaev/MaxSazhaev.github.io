@@ -181,6 +181,21 @@ background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, F
     height: 900px;
 }
 
+.home h1
+{
+    color: black;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+    height:100%;
+    padding-top: 400px;
+    vertical-align: middle;
+    text-align: center;
+}
+
 .home h2
 {
     font-weight: bold;
