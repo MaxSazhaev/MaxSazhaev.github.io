@@ -204,9 +204,19 @@ background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, F
     color: orange;
 }
 
-.home p
+#HomeEmail
 {
-    
+    padding-bottom: 100px;
+    font-weight: bold;
+    color: whitesmoke;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+}
+
+#HomeEmail:hover
+{
+    text-decoration: none;
+    color: grey;
 }
 
 .img2
