@@ -6,8 +6,6 @@
     box-sizing: border-box;
 }
 
-
-
 header
 {
 height: 80px;
@@ -18,75 +16,6 @@ ul
 {
     list-style: none;
     margin: 0px !important;
-}
-
-.about h1
-{
-    color: black;
-    font-weight: bold;
-    text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
-}
-
-.projects h1
-{
-    color: black;
-    font-weight: bold;
-    text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
-}
-
-.contact h1
-{
-    color: black;
-    font-weight: bold;
-    text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
-}
-
-.slider h1
-{
-    color: black;
-    font-weight: bold;
-    text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
-    margin-top: 450px;
-}
-
-h2 a
-{
-   padding-top: 20px;
-   color: orange;
-}
-
-h2 a:link, h2 a:visited, h2 a:active
-{
-    color: orange;
-}
-
-h2 a:hover
-{
-    color: dodgerblue;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-
-}
-
-ul li
-{
-    display: inline-block;
 }
 
 header nav
@@ -127,6 +56,241 @@ header nav ul li a:hover
 background: -webkit-linear-gradient(to right, #272727, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+.home
+{
+    background: url(..//images/background-game.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+
+    height: 960px;
+}
+
+.home h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bold;
+    padding-top: 370px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.home p{
+    font-size: 0.9em;
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#HomeEmail
+{
+    color: whitesmoke;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+#HomeEmail:hover
+{
+    text-decoration: none;
+    color: grey;
+}
+
+.about h1
+{
+    color: black;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.about
+{
+padding-left: 5%;
+padding-top: 5%;
+}
+
+.about h2 
+{   
+    text-align: left;
+    color: orange;
+    transition: all 0.5s ease-in-out;
+}
+
+.aboutimg
+{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.AboutMeText
+  {
+      margin-right: 5%;
+  }
+
+.projects h1
+{
+    color: black;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+
+h2 a
+{
+   padding-top: 20px;
+   color: orange;
+}
+
+h2 a:link, h2 a:visited, h2 a:active
+{
+    color: orange;
+}
+
+h2 a:hover
+{
+    color: dodgerblue;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+
+}
+
+ul li
+{
+    display: inline-block;
+}
+
+
+
+.column
+{
+    padding-bottom: 5%;
+    width: 50%;
+    justify-items: space-evenly;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: auto;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  div.box
+  {
+    box-sizing: border-box;
+    width: 90%;
+    border: 5px solid white;
+    padding: 5% 5% 5% 5%;
+  }
+
+  
+.projects
+{
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.projects h2 
+{   
+    text-align: center;
+    color: orange;
+    transition: all 0.5s ease-in-out;
+}
+
+.static
+{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: white;
+}
+
+.static:hover{
+    opacity:0;
+}
+
+.projectgif
+{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contact h1
+{
+    color: black;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.contact a
+{
+    padding-right: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.contact a:hover
+{
+    text-decoration: none;
+    color: grey;
+}
+
+.contact
+{
+    /**background-color: rgb(37, 37, 37);*/
+    background: url(..//images/background-game.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+}
+
+/** unused section
+.slider h1
+{
+    color: black;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+    margin-top: 450px;
 }
 
 .slider ul,.slider ul li
@@ -170,54 +334,6 @@ background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, F
     background-color: dodgerblue;
 }
 
-.home
-{
-    background: url(..//images/background-game.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100% 100%;
-
-    height: 960px;
-}
-
-.home h1
-{
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-weight: bold;
-    height:100%;
-    padding-top: 370px;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.home h2
-{
-    
-    font-weight: bold;
-    text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
-    color: orange;
-}
-
-#HomeEmail
-{
-    padding-bottom: 100px;
-    font-weight: bold;
-    color: whitesmoke;
-    transition: all 0.5s ease-in-out;
-    text-align: center;
-}
-
-#HomeEmail:hover
-{
-    text-decoration: none;
-    color: grey;
-}
 
 .img2
 {
@@ -231,118 +347,4 @@ background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, F
     background-size: 100% 100%;
 }
 
-.column
-{
-    padding-bottom: 5%;
-    width: 50%;
-    justify-items: space-evenly;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin: auto;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-
-  div.box
-  {
-    box-sizing: border-box;
-    width: 90%;
-    border: 5px solid white;
-    padding: 5% 5% 5% 5%;
-  }
-
-  .AboutMeText
-  {
-      margin-right: 5%;
-  }
-
-.projects
-{
-    padding-left: 5%;
-    padding-top: 5%;
-}
-
-.projects h2 
-{   
-    text-align: center;
-    color: orange;
-    transition: all 0.5s ease-in-out;
-}
-
-.static
-{
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background: white;
-}
-
-.static:hover{
-    opacity:0;
-}
-
-.projectgif
-{
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.about
-{
-padding-left: 5%;
-padding-top: 5%;
-}
-
-.about h2 
-{   
-    text-align: left;
-    color: orange;
-    transition: all 0.5s ease-in-out;
-}
-
-.aboutimg
-{
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.contact a
-{
-    padding-right: 20px;
-    font-weight: bold;
-    color: whitesmoke;
-    transition: all 0.5s ease-in-out;
-}
-
-
-.contact a:hover
-{
-    text-decoration: none;
-    color: grey;
-}
-
-.contact
-{
-    /**background-color: rgb(37, 37, 37);*/
-    background: url(..//images/background-game.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100% 100%;
-    padding-left: 5%;
-    padding-top: 5%;
-    padding-right: 5%;
-}
+*/
