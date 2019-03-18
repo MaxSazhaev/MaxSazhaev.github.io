@@ -71,10 +71,11 @@ background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, F
 .home
 {
     background: url(..//images/background-game.png) no-repeat center center fixed;
+
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 100% 100%;
+  background-size: cover;
 
     height: 960px;
 }
@@ -210,6 +211,8 @@ ul li
 
   div.box
   {
+    
+    object-fit: cover;
     box-sizing: border-box;
     width: 90%;
     border: 5px solid white;
@@ -232,6 +235,7 @@ ul li
 
 .static
 {
+    display: block;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -245,6 +249,7 @@ ul li
 
 .projectgif
 {
+   
     align-items: center;
     height: 100%;
     width: 100%;
@@ -284,7 +289,7 @@ ul li
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 100% 100%;
+  background-size: cover;
     padding-left: 5%;
     padding-top: 5%;
     padding-right: 5%;
