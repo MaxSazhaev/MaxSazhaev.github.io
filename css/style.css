@@ -18,8 +18,8 @@ body
 
 header
 {
-height: 80px;
-line-height: 50px;
+height: 100%;
+line-height: 100%;
 }
 
 ul
@@ -83,18 +83,19 @@ background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, F
 .home h1
 {
     font-family: 'Times New Roman', Times, serif;
-    color: black;
+    color: white;
     font-weight: bold;
-    padding-top: 370px;
+    margin-top: -510px;
     vertical-align: middle;
     text-align: center;
 }
 
 .home p{
     font-size: 0.9em;
-    margin: 0;
+    
     position: absolute;
-    top: 90%;
+
+    margin-top: 340px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
