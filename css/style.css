@@ -66,6 +66,15 @@ header nav ul li a:hover
 background: -webkit-linear-gradient(to right, #272727, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #272727, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+
+background: -moz-linear-gradient(to right, #272727, #000000); /* FF 3.6+ */  
+    background: -ms-linear-gradient(to right, #272727, #000000); /* IE10 */  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #272727), color-stop(100%, #000000)); /* Safari 4+, Chrome 2+ */  
+    background: -o-linear-gradient(to right, #272727, #000000); /* Opera 11.10 */  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#272727', endColorstr=#000000); /* IE6 & IE7 */  
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#272727', endColorstr=#000000)"; /* IE8+ */  
+    background: linear-gradient(to right, #272727, #000000); /* the standard */  
+    z-index: 1;
 }
 
 .home
