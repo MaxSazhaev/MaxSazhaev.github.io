@@ -31,7 +31,7 @@
 <body id="grad">
         <section class="home">
     <header id="Head">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" >
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" >
            <img src="images/logo.png" class="logo">
             <nav>
                 <ul class="nav navbar-nav">
@@ -210,6 +210,16 @@
         });
     </script>
 
+
+<script>
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 50) {
+    $('.navbar').css('background','#343a40');
+    } else {
+    $('.navbar').css('background','transparent');
+    }
+    });
+</script>
 </body>
 
 </html>
@@ -269,4 +279,23 @@
             </li>
         </ul>
     </section>
+
+
+
+        <script>
+        $(document).ready(function(){
+
+            $(window).scroll(function()
+            {
+                if($(window).scrollTop()>300)
+                {
+                    $('nav').addClass('red');
+                }
+                else
+                {
+                    $('nav').removeClass('red');
+                }
+            });
+        });
+    </script>
      -->
