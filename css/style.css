@@ -160,9 +160,15 @@ padding-top: 5%;
     width: 100%;
 }
 
+.MyName
+{
+    margin-top: -0%;
+}
+
 .AboutMeText
   {
       margin-right: 5%;
+      margin-top: -0%;
   }
 
 .projects h1
